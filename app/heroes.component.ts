@@ -68,6 +68,7 @@ import { HeroService } from './hero-service'
  `],
  providers: [ HeroService ]
 })
+
 export class HeroesComponent  {
   constructor (private heroService : HeroService ) {
 
