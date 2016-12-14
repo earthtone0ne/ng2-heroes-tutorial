@@ -66,7 +66,7 @@ import { HeroService } from './hero-service'
      border-radius: 4px 0 0 4px;
    }
  `],
- providers: [ HeroService ]
+ providers: [  ]
 })
 
 export class HeroesComponent  {
@@ -76,7 +76,6 @@ export class HeroesComponent  {
   ngOnInit(): void {
     this.getHeroes();
   }
-  title = 'Tour of Heroes';
   heroes : Hero[];
   selectedHero : Hero;
   onSelect(hero : Hero){

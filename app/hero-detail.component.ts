@@ -9,7 +9,7 @@ import { Hero } from './hero'
     <h2>{{hero.name}} details!</h2>
       <div>
         <label>Name: </label>
-        <input  [ngModel]="hero.name" />
+        <input  [ngModel]="hero.name" placeholder="name"/>
       </div>
       <div>
         <label>ID: </label>
