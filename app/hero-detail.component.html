@@ -1,0 +1,31 @@
+<div *ngIf="hero" class="hero-detail">
+  <h2>{{hero.name}} details!</h2>
+  <div>
+    <label class="hero-data">Name: </label>
+    <div class="hero-data">
+      <input [ngModel]="hero.name" placeholder="name"/>
+    </div>
+  </div>
+  <div>
+    <label class="hero-data">ID: </label>
+    <div class="hero-data">{{hero.id}}</div>
+  </div>
+  <button (click)="goBack()">Back</button>
+</div>
+  <style>
+    .hero-detail {
+      background-color: #CFD8DC;
+      border-radius: 4px;
+      padding: 15px;
+    }
+    .hero-data {
+      display: inline-block;
+      width: 4em;
+      margin: 0.2em 0 0 1em;
+    }
+    button {
+      margin: 10px 0;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+    </style>

@@ -1,0 +1,15 @@
+<h2>My Heroes</h2>
+<div id="heroesGrid">
+  <div class="heroContainer heroes">
+    <ul class="heroes">
+      <li *ngFor="let hero of heroes" (click)="onSelect(hero)"
+      [class.selected]="hero === selectedHero">
+        <span class='badge'>{{hero.id}} </span> {{hero.name}}
+      </li>
+    </ul>
+  </div>
+  <div class="heroContainer mini-detail" *ngIf="selectedHero">
+    <h2>I choose {{selectedHero.name | uppercase}}</h2>
+    <button (click)="goToDetail()">View Details</button>
+  </div>
+</div>
